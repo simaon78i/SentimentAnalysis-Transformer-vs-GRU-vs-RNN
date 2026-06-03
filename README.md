@@ -24,21 +24,6 @@ layer — on the same data and training setup, and analyzes *why* each one succe
 
 See [`REPORT.md`](REPORT.md) for the full write-up, training curves, and analysis.
 
-## Repository structure
-
-```
-.
-├── README.md          # This file
-├── REPORT.md          # Full project report with plots and analysis
-├── assets/            # Training curves (accuracy / loss) for every model
-├── src/               # Model definitions and training code
-│   ├── models.py      # ExRNN, ExGRU, ExMLP, ExLRestSelfAtten
-│   ├── train.py       # Training / evaluation loop
-│   └── analysis.py    # Sub-prediction score tables and error analysis
-└── requirements.txt   # Python dependencies
-```
-
-> Adjust the paths above to match your actual file names.
 
 ## Setup
 
@@ -81,7 +66,6 @@ python src/analysis.py --model mlp
 python src/analysis.py --model attention
 ```
 
-> Replace the commands above with your actual entry points and flags.
 
 ## The four strategies
 
@@ -98,4 +82,4 @@ python src/analysis.py --model attention
 
 ## License
 
-Add a license of your choice (e.g. MIT) in a `LICENSE` file.
+ MIT `LICENSE`.
